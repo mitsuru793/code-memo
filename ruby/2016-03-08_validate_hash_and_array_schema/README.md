@@ -1,3 +1,7 @@
+---
+layout: page
+title: ArrayとHashのスキーマをチェックする
+---
 `Array`や`Hash`のスキーマをチェックする方法です。各要素の型をチェックすることができます。スキーマ自体は、`Array`や`Hash`で定義することができます。
 
 既存の`Array`クラスと`Hash`クラスに`has_shape?`を追加して実現しています。各要素のチェックには、[Enumerable#all?](http://ref.xaio.jp/ruby/classes/enumerable/all)を使っています。
