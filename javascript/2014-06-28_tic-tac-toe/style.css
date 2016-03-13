@@ -1,0 +1,25 @@
+.mb10 {
+	margin-bottom: 10px;
+}
+
+div#gameArea {
+	width: 300px;
+	/*background: #239;*/
+	text-align: center;
+}
+
+table#gameBoard {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+}
+
+table#gameBoard td {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+}
+
+table#gameBoard td:hover {
+	background-color: #EEE;
+}
