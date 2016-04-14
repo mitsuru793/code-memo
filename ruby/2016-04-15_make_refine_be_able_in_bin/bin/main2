@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'thor'
+require_relative '../lib/my_module'
+
+class Command < Thor
+  using MyModule
+  desc "hello", "test method"
+  def hello
+    puts MyModule.string_hello
+    puts MyModule.get_empty_string.hello
+  end
+end
+
+Command.start(ARGV)
