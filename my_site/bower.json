@@ -1,0 +1,6 @@
+{
+  "name": "my-profile",
+  "dependencies": {
+    "jquery": "~1.12.0"
+  }
+}
