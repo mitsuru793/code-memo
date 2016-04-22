@@ -1,6 +1,6 @@
 ---
 layout: code
-title: コマンド一覧
+title: bashコマンド一覧
 tags: [bash]
 ---
 
