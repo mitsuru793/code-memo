@@ -6,7 +6,7 @@ assets:
     - _assets/stylesheets
     - _vendor/
 
-baseurl: ""
+baseurl: "/code-memo/"
 
 exclude:
   - .bowerrc
