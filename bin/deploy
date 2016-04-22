@@ -7,7 +7,7 @@ set -e
 
 echo "Started deploying"
 
-target_branch=master
+target_branch=gh-pages
 
 # Checkout gh-pages branch.
 if [[ `git branch | grep $target_branch` ]]; then
