@@ -1,4 +1,5 @@
 ---
+layout: code
 title: ○☓ゲーム
-tags: game
+tags: [javascript, game]
 ---

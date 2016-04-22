@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: クラス拡張を特定のクラス・インスタンスのみで行う
+tags: [ruby]
 ---
 
 `refine`を使えば特定のクラス内のみに、クラス拡張の影響を限定することができます。

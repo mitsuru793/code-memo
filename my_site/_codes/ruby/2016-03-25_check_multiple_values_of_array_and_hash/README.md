@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: ArrayとHashに複数の要素が含まれているかチェックする
+tags: [ruby]
 ---
 
 `Array`と`Hash`を拡張してメソッドを追加します。

@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: 標準入力をStringIOに置き換えてテストする
+tags: [ruby]
 ---
 
 # 標準入出力を`StringIO`に置き換える

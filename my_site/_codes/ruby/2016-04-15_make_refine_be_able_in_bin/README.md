@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: refineを使ったクラス拡張を実行コマンドでも使えるようにする
+tags: [ruby]
 ---
 
 `refine`を使ったクラス拡張を、実行コマンドでも使えるようにします。次のような出力をするコマンドです。

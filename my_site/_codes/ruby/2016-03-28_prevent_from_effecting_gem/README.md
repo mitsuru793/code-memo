@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: 依存gemの拡張を開発中のgem内に留める
+tags: [ruby]
 ---
 `module`内でクラス拡張しても、そのファイルを`require`するとクラス拡張はモジュール外にまで影響してしまう。`module`内で`refine`を使えば問題ありません。`refine`を使った`module`を、自作クラスの中で`using`で読みこめば、クラス拡張を自作クラス内に閉じ込めることができます。
 

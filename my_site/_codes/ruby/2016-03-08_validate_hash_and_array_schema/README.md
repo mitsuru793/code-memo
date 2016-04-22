@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: code
 title: ArrayとHashのスキーマをチェックする
+tags: [ruby]
 ---
 `Array`や`Hash`のスキーマをチェックする方法です。各要素の型をチェックすることができます。スキーマ自体は、`Array`や`Hash`で定義することができます。
 
