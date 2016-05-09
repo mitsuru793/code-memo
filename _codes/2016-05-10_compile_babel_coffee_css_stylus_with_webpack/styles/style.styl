@@ -1,0 +1,10 @@
+ul#list
+  for num in 1..5
+    if num % 2 == 0
+      li:nth-child({num})
+        color skyblue
+    else
+      li:nth-child({num})
+        color gold
+    li:nth-child({num})
+      font-size num * 11px
