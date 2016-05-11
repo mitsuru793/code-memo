@@ -1,0 +1,12 @@
+digraph sample {
+
+graph [fontname = "NfMotoyaCedar", rankdir = LR];
+
+// 青
+"Photoshop" [color = "#3399ff"];
+
+"Pinterest", "MAD", "漫画", "アニメ", "Pixiv", "DeviantArt" -> "絵コンテ" [label = "idea"];
+"ぱくたそ", "Unsplash", "Pixabay" -> "Photoshop" [label = "collect"];
+"絵コンテ" -> "Photoshop" [label = "create"];
+"Photoshop" -> "Google+", "Pixiv", "Facebook", "LINE" [label = "post"];
+}
