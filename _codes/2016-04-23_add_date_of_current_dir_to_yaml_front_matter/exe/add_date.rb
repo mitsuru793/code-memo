@@ -1,29 +1,3 @@
----
-layout: code
-title: 親ディレクトリ名の日付をYAML Front Matterに追加する
-tags: [ruby yaml]
-date: 2016-04-23 00:00:00 +0900
----
-
-**追記**
-
-* 2016-05-13: dateが設定されてないものだけ変更するように。do_head_lines()のテストコードはありませんが、実際に使って問題はありませんでした。
-
-
-複数のリポジトリを1つのリポジトリで管理するようにすると、下記のようなディレクトリ構造になると思います。ディレクトリ名が被らないように日付を付けています。
-
-`add_date_of_current_dir_to_front_matter('*/README.md')`
-
-対象ファイルのYAML Front Matterの末尾にdateを加える関数です。加える日付は、そのファイルがある親ディレクトリのファイル名の接頭辞から取得します。
-
-```
-.
-└── 2016-04-02
-    └── README.md
-```
-
-
-```ruby
 #!/usr/bin/env ruby
 require 'time'
 
@@ -97,4 +71,3 @@ end
 
 path = File.join(ARGV[0], '*', 'README.md')
 add_date_of_current_dir_to_front_matter(path)
-```
