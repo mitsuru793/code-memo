@@ -2,6 +2,7 @@
 layout: code
 title: Hashのkeyをシンボルから文字列へ変更する
 tags: [ruby]
+date: 2016-03-28 00:00:00 +0900
 ---
 
 `Hash`を`each`で回している時に、レシーバであるハッシュに新しい`key`を追加することはできません。`RuntimeError`が発生し、`can't add a new key into hash during iteration`と表示されます。

@@ -2,6 +2,7 @@
 layout: code
 title: クラスやメソッドの色々な定義方法
 tags: [ruby]
+date: 2016-05-01 00:00:00 +0900
 ---
 
 ```ruby

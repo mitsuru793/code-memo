@@ -2,6 +2,7 @@
 layout: code
 title: ArrayとHashに複数の要素が含まれているかチェックする
 tags: [ruby]
+date: 2016-03-25 00:00:00 +0900
 ---
 
 `Array`と`Hash`を拡張してメソッドを追加します。

@@ -2,6 +2,7 @@
 layout: code
 title: 変数のデフォルト値
 tags: [bash]
+date: 2016-01-26 00:00:00 +0900
 ---
 
 ```bash

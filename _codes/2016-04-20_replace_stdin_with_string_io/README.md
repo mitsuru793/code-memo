@@ -2,6 +2,7 @@
 layout: code
 title: 標準入力をStringIOに置き換えてテストする
 tags: [ruby]
+date: 2016-04-20 00:00:00 +0900
 ---
 
 # 標準入出力を`StringIO`に置き換える

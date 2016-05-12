@@ -2,6 +2,7 @@
 layout: code
 title: 親ディレクトリ名の日付をYAML Front Matterに追加する
 tags: [ruby yaml]
+date: 2016-04-23 00:00:00 +0900
 ---
 
 `add_date_of_current_dir_to_front_matter('*/README.md')`

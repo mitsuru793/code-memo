@@ -2,6 +2,7 @@
 layout: code
 title: macでファイルの作成日時をYAML Front Matterに書き込む
 tags: [ruby, bash, mac, yaml]
+date: 2016-04-22 00:00:00 +0900
 ---
 
 # テストコードの概要
