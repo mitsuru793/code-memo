@@ -11,8 +11,8 @@ tags: [ruby, webrick, proxy]
 |ディレクトリ|参考|
 |:-----------|:---|
 |sample01|[Rubyで手っ取り早くWEB開発環境を用意する。WEBrick利用 - むかぁ～ どっと　こむ](http://mukaer.com/archives/2012/03/08/rubywebwebrick/)|
-|mount_sample|[基本機能の実装にチャレンジ！ | Think IT（シンクイット）](https://thinkit.co.jp/article/117/2)|
-|proxy_sample|[プロキシサーバーを作る！ | Think IT（シンクイット）](https://thinkit.co.jp/article/117/3)|
+|mount_sample|[基本機能の実装にチャレンジ！ \| Think IT（シンクイット）](https://thinkit.co.jp/article/117/2)|
+|proxy_sample|[プロキシサーバーを作る！ \| Think IT（シンクイット）](https://thinkit.co.jp/article/117/3)|
 
 # WEBrickとは？
 
