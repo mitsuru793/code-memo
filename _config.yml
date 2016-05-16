@@ -24,6 +24,7 @@ exclude:
 gems:
   - jekyll-assets
   - jekyll-sitemap
+  - jekyll-coffeescript
 
 markdown: kramdown
 
