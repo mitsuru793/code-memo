@@ -16,7 +16,8 @@ fi
 git checkout -b $target_branch
 
 # Build site.
-bower install
+npm install
+webpack
 bundle exec jekyll build
 
 # Delete and move files
@@ -31,7 +32,7 @@ git push -f -q origin $target_branch
 
 # Move back to previous branch.
 git checkout -
-bower install
+npm install
 
 echo "Deployed Successfully!"
 
