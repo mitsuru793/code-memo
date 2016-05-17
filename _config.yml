@@ -18,6 +18,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - node_modules/
 
 #ga_analytics: UA-xxxxxxxx-xx
 
