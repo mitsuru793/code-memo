@@ -6,5 +6,6 @@ SimpleJekyllSearch({
   json: './search.json',
   searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
   noResultsText: 'No results found',
+  limit: 100,
   fuzzy: false
 });
