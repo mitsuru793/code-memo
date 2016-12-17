@@ -1,0 +1,27 @@
+Only in myapp/app/assets/javascripts: users.coffee
+Only in myapp/app/assets/stylesheets: scaffolds.scss
+Only in myapp/app/assets/stylesheets: users.scss
+Only in myapp/app/controllers: users_controller.rb
+Only in myapp/app/helpers: users_helper.rb
+Only in myapp/app/models: user.rb
+Only in myapp/app/views: users
+diff -ur myapp/config/routes.rb myapp_bak/config/routes.rb
+--- myapp/config/routes.rb	2016-05-13 21:36:00.000000000 +0900
++++ myapp_bak/config/routes.rb	2016-05-13 21:30:49.000000000 +0900
+@@ -1,5 +1,4 @@
+ Rails.application.routes.draw do
+-  resources :users
+   # The priority is based upon order of creation: first created -> highest priority.
+   # See how all your routes lay out with "rake routes".
+ 
+Only in myapp/db: development.sqlite3
+Only in myapp/db: migrate
+Only in myapp/db: schema.rb
+Only in myapp/log: development.log
+Only in myapp/test/controllers: users_controller_test.rb
+Only in myapp/test/fixtures: users.yml
+Only in myapp/test/models: user_test.rb
+Only in myapp/tmp/cache/assets: sprockets
+Only in myapp/tmp: pids
+Only in myapp/tmp: sessions
+Only in myapp/tmp: sockets
