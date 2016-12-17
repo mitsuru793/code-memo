@@ -1,13 +1,323 @@
----
----
 [
-  {% for post in site.codes %}
+  
     {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "○☓ゲーム",
+      "category" : "",
+      "tags"     : "javascript, game",
+      "url"      : "/code-memo//codes/2014-06-28_tic-tac-toe/README.html",
+      "date"     : "2014-06-28 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "echoでアラームを三拍子で鳴らす",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2014-08-31_sound-the-alarm-with-triple-triple-septuple/README.html",
+      "date"     : "2014-08-31 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "じゃんけんゲーム",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2014-08-31_the-game-of-scissors-paper-rock/README.html",
+      "date"     : "2014-08-31 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "ファイルの最終更新日時を月日時秒で取得",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2016-01-25_updated_time_of_file/README.html",
+      "date"     : "2016-01-25 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "変数のデフォルト値",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2016-01-26_default_value/README.html",
+      "date"     : "2016-01-26 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "ArrayとHashのスキーマをチェックする",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-03-08_validate_hash_and_array_schema/README.html",
+      "date"     : "2016-03-08 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "ArrayとHashに複数の要素が含まれているかチェックする",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-03-25_check_multiple_values_of_array_and_hash/README.html",
+      "date"     : "2016-03-25 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "クラス拡張を特定のクラス・インスタンスのみで行う",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-03-27_range_of_extend_class/README.html",
+      "date"     : "2016-03-27 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "Hashのkeyをシンボルから文字列へ変更する",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-03-28_add_a_new_key_into_hash_during_iteration/README.html",
+      "date"     : "2016-03-28 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "依存gemの拡張を開発中のgem内に留める",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-03-28_prevent_from_effecting_gem/README.html",
+      "date"     : "2016-03-28 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "モジュール内でクラス拡張した際の型判定",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-12_check_type_when_extend_class_in_module/README.html",
+      "date"     : "2016-04-12 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "「ダブルコロンでのトップレベルの参照」と「局所的なクラス拡張」",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-13_doble_colon_and_local_extend_class/README.html",
+      "date"     : "2016-04-13 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "refineを使ったクラス拡張を実行コマンドでも使えるようにする",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-15_make_refine_be_able_in_bin/README.html",
+      "date"     : "2016-04-15 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "標準入力をStringIOに置き換えてテストする",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-20_replace_stdin_with_string_io/README.html",
+      "date"     : "2016-04-20 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "ディレクトリ名の日付をファイル名の先頭につける",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-22_rename_adding_date_from_current_dir/README.html",
+      "date"     : "2016-04-22 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "3回目にマッチした行を置換する",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-22_replace_match_line/README.html",
+      "date"     : "2016-04-22 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "macでファイルの作成日時をYAML Front Matterに書き込む",
+      "category" : "",
+      "tags"     : "ruby, bash, mac, yaml",
+      "url"      : "/code-memo//codes/2016-04-22_write_creation_time/README.html",
+      "date"     : "2016-04-22 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "親ディレクトリ名の日付をYAML Front Matterに追加する",
+      "category" : "",
+      "tags"     : "ruby yaml",
+      "url"      : "/code-memo//codes/2016-04-23_add_date_of_current_dir_to_yaml_front_matter/README.html",
+      "date"     : "2016-04-23 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "guardでテストを実行するとrequireしたものは引き継がれる",
+      "category" : "",
+      "tags"     : "ruby, guard",
+      "url"      : "/code-memo//codes/2016-04-25_require_in_guard_test/README.html",
+      "date"     : "2016-04-25 00:06:07 +0900"
+    } ,
+  
+    {
+      "title"    : "クラス変数とクラスインスタンス変数の違い",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-25_class_isntance_value/README.html",
+      "date"     : "2016-04-25 10:58:50 +0900"
+    } ,
+  
+    {
+      "title"    : "Module内でクラスインスタンス変数",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-04-26_class_instance_value_in_module/README.html",
+      "date"     : "2016-04-26 18:50:44 +0900"
+    } ,
+  
+    {
+      "title"    : "クラスやメソッドの色々な定義方法",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-05-01_class_and_method_definition/README.html",
+      "date"     : "2016-05-01 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "自作クラスの親クラスはModuleでもClassでもなくObjectである",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-05-03_my-class-parenet-is-object/README.html",
+      "date"     : "2016-05-03 17:00:12 +0900"
+    } ,
+  
+    {
+      "title"    : "モジュールに定義したクラス変数を後から変更する",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-05-04_change_class_variable_in_module/README.html",
+      "date"     : "2016-05-04 20:11:59 +0900"
+    } ,
+  
+    {
+      "title"    : "HashとArrayからディレクトリ階層を作成する",
+      "category" : "",
+      "tags"     : "ruby, test_helper",
+      "url"      : "/code-memo//codes/2016-05-04_create_directory_hierarchy_from_hash_and_array/README.html",
+      "date"     : "2016-05-04 22:53:25 +0900"
+    } ,
+  
+    {
+      "title"    : "CoffeeScriptで複数のliタグにclickイベントをセットする",
+      "category" : "",
+      "tags"     : "coffeescript, javascript",
+      "url"      : "/code-memo//codes/2016-05-07_closure_of_coffeescript_in_li_click_event/README.html",
+      "date"     : "2016-05-07 02:13:11 +0900"
+    } ,
+  
+    {
+      "title"    : "ライブラリを使わずに兄弟要素としてDOMを追加する関数",
+      "category" : "",
+      "tags"     : "coffeesciprt",
+      "url"      : "/code-memo//codes/2016-05-07_append_dom_to_sibling/README.html",
+      "date"     : "2016-05-07 05:57:01 +0900"
+    } ,
+  
+    {
+      "title"    : "babelを使ってみる",
+      "category" : "",
+      "tags"     : "babel",
+      "url"      : "/code-memo//codes/2016-05-09_try_babel/README.html",
+      "date"     : "2016-05-09 18:14:43 +0900"
+    } ,
+  
+    {
+      "title"    : "webpackでbabel, coffeescript, css, stylusをコンパイルする",
+      "category" : "",
+      "tags"     : "webpack, babel, coffeescript, css, stylus, error",
+      "url"      : "/code-memo//codes/2016-05-10_compile_babel_coffee_css_stylus_with_webpack/README.html",
+      "date"     : "2016-05-10 03:51:37 +0900"
+    } ,
+  
+    {
+      "title"    : "公式サイトを参考にTypeScriptを初めてさわってみた感想",
+      "category" : "",
+      "tags"     : "typescript, javascript",
+      "url"      : "/code-memo//codes/2016-05-10_try_typescript_with_official_site/README.html",
+      "date"     : "2016-05-10 17:34:11 +0900"
+    } ,
+  
+    {
+      "title"    : "WEBrickでプロキシサーバを作ってみる",
+      "category" : "",
+      "tags"     : "ruby, webrick, proxy",
+      "url"      : "/code-memo//codes/2016-05-11_create_proxy_with_webrick/README.html",
+      "date"     : "2016-05-11 17:20:41 +0900"
+    } ,
+  
+    {
+      "title"    : "テキストから作図してくれるGraphvizを使ってみた",
+      "category" : "",
+      "tags"     : "graph, graphviz",
+      "url"      : "/code-memo//codes/2016-05-12_try_graphviz/README.html",
+      "date"     : "2016-05-12 00:33:37 +0900"
+    } ,
+  
+    {
+      "title"    : "Rubyでファイルを読み込む時に、相対パスを指定するとどこを相対とするのか？",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-05-12_relative_path_in_file_read_of_ruby/README.html",
+      "date"     : "2016-05-12 15:53:49 +0900"
+    } ,
+  
+    {
+      "title"    : "Reactの公式チュートリアルでコメントを送信するとエラーになる",
+      "category" : "",
+      "tags"     : "javascript, react",
+      "url"      : "/code-memo//codes/2016-05-12_cannot_submit_comments_in_react-tutorial/README.html",
+      "date"     : "2016-05-12 16:08:14 +0900"
+    } ,
+  
+    {
+      "title"    : "文字列を加工する破壊的メソッドを作る",
+      "category" : "",
+      "tags"     : "ruby",
+      "url"      : "/code-memo//codes/2016-05-13_dangerous_method_to_operate_string/README.html",
+      "date"     : "2016-05-13 01:03:16 +0900"
+    } ,
+  
+    {
+      "title"    : "引数全てを表す$@と$*の違いと問題",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2016-05-14_option_arg_asterisk_and_at_sign/README.html",
+      "date"     : "2016-05-14 11:03:33 +0900"
+    } ,
+  
+    {
+      "title"    : "bashのreadとは変数に代入するための便利関数",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/2016-05-15_read_is_function_for_asign_variables/README.html",
+      "date"     : "2016-05-15 02:14:58 +0900"
+    } ,
+  
+    {
+      "title"    : "PHPのテンプレートライブラリplatesのレンダリング処理を読む",
+      "category" : "",
+      "tags"     : "php, read",
+      "url"      : "/code-memo//codes/2016-12-17_read_thephpleague_plate_at_rendering/README.html",
+      "date"     : "2016-12-17 19:40:01 +0900"
+    } ,
+  
+    {
+      "title"    : "MySQLのJSON_EXTRACTで文字列を取得するとダブルクオートも含まれる",
+      "category" : "",
+      "tags"     : "mysql",
+      "url"      : "/code-memo//codes/2016-12-17_mysql_json_extract_double_quote/README.html",
+      "date"     : "2016-12-17 22:05:46 +0900"
+    } ,
+  
+    {
+      "title"    : "bashコマンド一覧",
+      "category" : "",
+      "tags"     : "bash",
+      "url"      : "/code-memo//codes/bash_command.html",
+      "date"     : "2016-12-17 23:34:38 +0900"
+    } 
+  
 ]

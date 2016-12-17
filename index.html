@@ -1,25 +1,451 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
-  {% include simple-jekyll-search.html %}
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mitsuru793</title>
+  <meta name="description" content="テストコードや、コードリーディングのメモを置いています。
+">
+
+  <link rel="stylesheet" href="/code-memo//css/main.css">
+  <link rel="canonical" href="http://mitsuru793.github.io/code-memo//">
+  <link rel="alternate" type="application/rss+xml" title="Mitsuru793" href="http://mitsuru793.github.io/code-memo//feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/code-memo//">Mitsuru793</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/code-memo//about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="home">
+  <!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
+
   <div id=chart-container><canvas id="chart" /></div>
 
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.codes reversed %}
+    
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} [ {{ post.tags | join ', ' }} ]</span>
+        <span class="post-meta">Dec 17, 2016 [ bash ]</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="/code-memo//codes/bash_command.html">bashコマンド一覧</a>
         </h2>
       </li>
-    {% endfor %}
+    
+      <li>
+        <span class="post-meta">Dec 17, 2016 [ mysql ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-12-17_mysql_json_extract_double_quote/README.html">MySQLのJSON_EXTRACTで文字列を取得するとダブルクオートも含まれる</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 17, 2016 [ php read ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-12-17_read_thephpleague_plate_at_rendering/README.html">PHPのテンプレートライブラリplatesのレンダリング処理を読む</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 15, 2016 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-15_read_is_function_for_asign_variables/README.html">bashのreadとは変数に代入するための便利関数</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 14, 2016 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-14_option_arg_asterisk_and_at_sign/README.html">引数全てを表す$@と$*の違いと問題</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 13, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-13_dangerous_method_to_operate_string/README.html">文字列を加工する破壊的メソッドを作る</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 12, 2016 [ javascript react ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-12_cannot_submit_comments_in_react-tutorial/README.html">Reactの公式チュートリアルでコメントを送信するとエラーになる</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 12, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-12_relative_path_in_file_read_of_ruby/README.html">Rubyでファイルを読み込む時に、相対パスを指定するとどこを相対とするのか？</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 12, 2016 [ graph graphviz ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-12_try_graphviz/README.html">テキストから作図してくれるGraphvizを使ってみた</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 11, 2016 [ ruby webrick proxy ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-11_create_proxy_with_webrick/README.html">WEBrickでプロキシサーバを作ってみる</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 10, 2016 [ typescript javascript ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-10_try_typescript_with_official_site/README.html">公式サイトを参考にTypeScriptを初めてさわってみた感想</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 10, 2016 [ webpack babel coffeescript css stylus error ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-10_compile_babel_coffee_css_stylus_with_webpack/README.html">webpackでbabel, coffeescript, css, stylusをコンパイルする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 9, 2016 [ babel ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-09_try_babel/README.html">babelを使ってみる</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 7, 2016 [ coffeesciprt ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-07_append_dom_to_sibling/README.html">ライブラリを使わずに兄弟要素としてDOMを追加する関数</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 7, 2016 [ coffeescript javascript ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-07_closure_of_coffeescript_in_li_click_event/README.html">CoffeeScriptで複数のliタグにclickイベントをセットする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 4, 2016 [ ruby test_helper ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-04_create_directory_hierarchy_from_hash_and_array/README.html">HashとArrayからディレクトリ階層を作成する</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 4, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-04_change_class_variable_in_module/README.html">モジュールに定義したクラス変数を後から変更する</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 3, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-03_my-class-parenet-is-object/README.html">自作クラスの親クラスはModuleでもClassでもなくObjectである</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 1, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-05-01_class_and_method_definition/README.html">クラスやメソッドの色々な定義方法</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 26, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-26_class_instance_value_in_module/README.html">Module内でクラスインスタンス変数</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 25, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-25_class_isntance_value/README.html">クラス変数とクラスインスタンス変数の違い</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 25, 2016 [ ruby guard ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-25_require_in_guard_test/README.html">guardでテストを実行するとrequireしたものは引き継がれる</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 23, 2016 [ ruby yaml ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-23_add_date_of_current_dir_to_yaml_front_matter/README.html">親ディレクトリ名の日付をYAML Front Matterに追加する</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 22, 2016 [ ruby bash mac yaml ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-22_write_creation_time/README.html">macでファイルの作成日時をYAML Front Matterに書き込む</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 22, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-22_replace_match_line/README.html">3回目にマッチした行を置換する</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 22, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-22_rename_adding_date_from_current_dir/README.html">ディレクトリ名の日付をファイル名の先頭につける</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 20, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-20_replace_stdin_with_string_io/README.html">標準入力をStringIOに置き換えてテストする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 15, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-15_make_refine_be_able_in_bin/README.html">refineを使ったクラス拡張を実行コマンドでも使えるようにする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 13, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-13_doble_colon_and_local_extend_class/README.html">「ダブルコロンでのトップレベルの参照」と「局所的なクラス拡張」</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 12, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-04-12_check_type_when_extend_class_in_module/README.html">モジュール内でクラス拡張した際の型判定</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 28, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-03-28_prevent_from_effecting_gem/README.html">依存gemの拡張を開発中のgem内に留める</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 28, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-03-28_add_a_new_key_into_hash_during_iteration/README.html">Hashのkeyをシンボルから文字列へ変更する</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 27, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-03-27_range_of_extend_class/README.html">クラス拡張を特定のクラス・インスタンスのみで行う</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 25, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-03-25_check_multiple_values_of_array_and_hash/README.html">ArrayとHashに複数の要素が含まれているかチェックする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 8, 2016 [ ruby ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-03-08_validate_hash_and_array_schema/README.html">ArrayとHashのスキーマをチェックする</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 26, 2016 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-01-26_default_value/README.html">変数のデフォルト値</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 25, 2016 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2016-01-25_updated_time_of_file/README.html">ファイルの最終更新日時を月日時秒で取得</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 31, 2014 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2014-08-31_the-game-of-scissors-paper-rock/README.html">じゃんけんゲーム</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 31, 2014 [ bash ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2014-08-31_sound-the-alarm-with-triple-triple-septuple/README.html">echoでアラームを三拍子で鳴らす</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 28, 2014 [ javascript game ]</span>
+
+        <h2>
+          <a class="post-link" href="/code-memo//codes/2014-06-28_tic-tac-toe/README.html">○☓ゲーム</a>
+        </h2>
+      </li>
+    
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="/code-memo//feed.xml">via RSS</a></p>
 
 </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mitsuru793</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Mitsuru793</li>
+          <li><a href="mailto:mitsuru793@gmail.com">mitsuru793@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/mitsuru793"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">mitsuru793</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/mitsuru793"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">mitsuru793</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>テストコードや、コードリーディングのメモを置いています。
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    <script src="/code-memo//assets/app.js" type="text/javascript"></script>
+  </body>
+
+</html>

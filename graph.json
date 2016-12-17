@@ -1,29 +1,111 @@
----
----
 {
-  {% assign categories = site.codes | map: 'categories' | join: ',' | split: ',' | uniq %}
+  
   "categories" : [
-    {% for tag in categories %}
-      {% assign count = 0 %}
-      {% for post in site.codes %}
-        {% if post.categories contains tag %}
-          {% assign count = count | plus: 1 %}
-        {% endif %}
-      {% endfor %}
-      ["{{ tag }}","{{ count }}"]{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    
   ],
 
-  {% assign tags = site.codes | map: 'tags' | join: ',' | split: ',' | uniq %}
+  
   "tags" : [
-    {% for tag in tags %}
-      {% assign count = 0 %}
-      {% for post in site.codes %}
-        {% if post.tags contains tag %}
-          {% assign count = count | plus: 1 %}
-        {% endif %}
-      {% endfor %}
-      ["{{ tag }}","{{ count }}"]{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    
+      
+      
+      ["javascript","4"],
+    
+      
+      
+      ["game","1"],
+    
+      
+      
+      ["bash","8"],
+    
+      
+      
+      ["ruby","22"],
+    
+      
+      
+      ["mac","1"],
+    
+      
+      
+      ["yaml","1"],
+    
+      
+      
+      ["ruby yaml","1"],
+    
+      
+      
+      ["guard","1"],
+    
+      
+      
+      ["test_helper","1"],
+    
+      
+      
+      ["coffeescript","2"],
+    
+      
+      
+      ["coffeesciprt","1"],
+    
+      
+      
+      ["babel","2"],
+    
+      
+      
+      ["webpack","1"],
+    
+      
+      
+      ["css","1"],
+    
+      
+      
+      ["stylus","1"],
+    
+      
+      
+      ["error","1"],
+    
+      
+      
+      ["typescript","1"],
+    
+      
+      
+      ["webrick","1"],
+    
+      
+      
+      ["proxy","1"],
+    
+      
+      
+      ["graph","1"],
+    
+      
+      
+      ["graphviz","1"],
+    
+      
+      
+      ["react","1"],
+    
+      
+      
+      ["php","1"],
+    
+      
+      
+      ["read","1"],
+    
+      
+      
+      ["mysql","1"]
+    
   ]
 }
